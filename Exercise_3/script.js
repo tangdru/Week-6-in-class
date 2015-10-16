@@ -69,5 +69,24 @@ function dataLoaded(error, rows){
         .call(axisY);
 
     //draw
+
+    plot.selectAll('circle') //this returns an empty selection
+        .data(rows) //we are creating a 1 to 1 relationshiop between <cirle> on page to element in array
+        .enter()
+        .append('circle') //automatically create everything in your array
+        .attr('cx',function(d) {
+            return scaleX(d.gdpPerCap)
+        })
+        .attr('cy',function(d) {
+            return scaleY(d.primaryCompletion)
+        })
+        .attr('r',5)
+        .on('click',function(d){
+            console.log(d);
+        })
+
+
+
+
 }
 

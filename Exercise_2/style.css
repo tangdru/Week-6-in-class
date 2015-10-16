@@ -33,7 +33,9 @@ p{
 	font-family:"Droid Serif", serif;
 }
 
+
 /*------------styling for axes-----------*/
+
 .axis .domain{
     fill:none
 }
@@ -45,3 +47,15 @@ p{
     font-size:10px;
     fill:rgb(180,180,180);
 }
+
+
+/*
+.domain{
+	fill:none
+}
+.axis .tick line{
+	stroke:black
+
+}
+
+*/

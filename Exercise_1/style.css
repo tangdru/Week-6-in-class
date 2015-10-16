@@ -19,7 +19,7 @@ html,body{
 }
 .container .canvas{
 	width:100%;
-	background:white;
+	background:darkslategray;
 	height:600px;
 }
 
